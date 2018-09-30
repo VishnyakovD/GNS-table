@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.header {
+  display: flex;
+  padding: 15px 0;
+  font-size: 20px;
+  align-items: baseline;
+}
+
+.header .header-label {
+  width: 80px;
+  font-weight: bold;
+  color: #424141;
+}
+
+.header .header-search {
+  width: 100%;
+}
+
+.header .header-search input {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  padding: 0 15px;
+  display: block;
+  background: #f5f5f5;
+  color: #424141;
+  outline: none;
+  border: 0;
+  border-radius: 50px;
+}
+
+.header .header-search input:hover {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #e7e7e7;
+}
+
+.table-results {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table-results tr {
+  border-bottom: 1px solid blanchedalmond;
+}
+
+.table-results tr:hover {
+  background-color: ivory !important;
+}
+
+.table-results tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.table-results td,
+.table-results th {
+  padding: 5px 10px;
+  width: 100%;
+  cursor: pointer;
+  height: 48px;
+  text-align: left;
+}
+
+.table-results td:nth-last-of-type(2) {
+  text-align: right;
+}
+
+.table-results th:last-of-type {
+  width: 110px;
+}
+
+.table-results tfoot {
+  font-weight: 600;
+}
+
+.table-results tr th span {
+  display: none;
+}
+
+.table-results tr.name.asc th:nth-of-type(1) span {
+  display: inline-block;
+}
+.table-results tr.name.desc th:nth-of-type(1) span {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.table-results tr.location.asc th:nth-of-type(2) span {
+  display: inline-block;
+}
+.table-results tr.location.desc th:nth-of-type(2) span {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.table-results tr.currency.asc th:nth-of-type(3) span {
+  display: inline-block;
+}
+.table-results tr.currency.desc th:nth-of-type(3) span {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.button {
+  border: 2px solid #e7e7e7;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 20px;
+  color: #424141;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #e7e7e7;
+  color: limegreen;
+}
+.button:hover::after {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  content: "»";
+  color: limegreen;
+  line-height: 1px;
+  font-size: 22px;
+}
+
+.button.style2 {
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.button.style2::after {
+  content: "";
+}
+.button.style2:hover::before {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  content: "«";
+  color: limegreen;
+  line-height: 1px;
+  font-size: 22px;
+}
+
+.right-align {
+  text-align: right !important;
+}
+.left-align {
+  text-align: left !important;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #424141;
+}
+
+.detail-page h3,
+.detail-page h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.detail-page h3 {
+  color: #424141;
+}
+
+.detail-page > div {
+  display: flex;
+}
+
+.detail-page div > div {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 2px solid blanchedalmond;
+  width: 50%;
+  height: 40vh;
+  background: #f5f5f5;
+}
+
+.detail-page div > div:hover {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: ivory !important;
+}
+
+.detail-page div > div:hover h3 {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  font-size: 14px;
+}
+
+.detail-page div > div:hover h2 {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  font-size: 30px;
+  color: limegreen;
+}
+
+.error {
+  border-color: red;
+  background: rgb(248, 224, 224);
+}
+
+.edit-cell input {
+  outline: none;
+}
+
+.button.style1 {
+  display: inline-block;
+  width: 35px;
+  border-radius: 3px;
+  height: 24px;
+  padding: 0;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.button.style1:hover::after {
+  content: "";
+}
